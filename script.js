@@ -43,11 +43,10 @@ const game = () => {
       console.log(message);
     } else if (
       message ===
-      "Invalid choice. Please refresh the page and enter 'rock','paper' or 'scissors'."
+      "Invalid choice. You lose ! Please enter 'rock','paper' or 'scissors'."
     ) {
-      alert(
-        "Invalid choice. Please refresh the page and enter 'rock','paper' or 'scissors'."
-      );
+      alert(message);
+      computerScore++;
     } else {
       console.log(message);
     }
