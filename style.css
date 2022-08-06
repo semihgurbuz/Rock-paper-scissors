@@ -1,0 +1,11 @@
+.buttons,
+.scores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.results,
+.final-result {
+  text-align: center;
+}
