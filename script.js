@@ -61,7 +61,11 @@ const getMessage = () => {
 
   let message = playRound("paper", getComputerChoice());
 
-  gameResult.textContent = message;
+  if (playerScore < 5 && computerScore < 5) {
+    gameResult.textContent = message;
+  } else {
+    gameResult.textContent = "";
+  }
 
   if (message === "You lose !" && computerScore < 5 && playerScore != 5) {
     computerScore++;
